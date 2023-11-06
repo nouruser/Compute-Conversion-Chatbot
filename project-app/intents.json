@@ -1,0 +1,1035 @@
+{
+    "intents": [
+        {
+            "tag": "calculate_parallelogram_area",
+            "patterns": [
+                "What is the area of a parallelogram?",
+                "Calculate the area of a parallelogram.",
+                "How to find the area of a parallelogram?",
+                "What is the formula for the area of a parallelogram?"
+            ],
+            "responses": [
+                "The area of the parallelogram is {} square units.",
+                "The area of the parallelogram measures {} square units.",
+                "The parallelogram has an area of {} square units."
+            ]
+        },
+        {
+            "tag": "calculate_parallelogram_perimeter",
+            "patterns": [
+                "What is the perimeter of a parallelogram?",
+                "Calculate the perimeter of a parallelogram.",
+                "How to find the perimeter of a parallelogram?",
+                "What is the formula for the perimeter of a parallelogram?"
+            ],
+            "responses": [
+                "The perimeter of the parallelogram is {} units.",
+                "The parallelogram has a perimeter of {} units.",
+                "The total length around the parallelogram is {} units."
+            ]
+        },
+        {
+            "tag": "calculate_cube_volume",
+            "patterns": [
+                "What is the volume of a cube?",
+                "Calculate the volume of a cube.",
+                "How to find the volume of a cube?",
+                "What is the formula for the volume of a cube?"
+            ],
+            "responses": [
+                "The volume of a cube with side length {} units is {} cubic units.",
+                "The cube with side length {} units has a volume of {} cubic units.",
+                "The volume of the cube measuring {} units on each side is {} cubic units."
+            ]
+        },
+        {
+            "tag": "calculate_cuboid_volume",
+            "patterns": [
+                "What is the volume of a cuboid?",
+                "Calculate the volume of a cuboid.",
+                "How to find the volume of a cuboid?",
+                "What is the formula for the volume of a cuboid?"
+            ],
+            "responses": [
+                "The volume of a cuboid with length {} units, width {} units, and height {} units is {} cubic units.",
+                "The cuboid with length {} units, width {} units, and height {} units has a volume of {} cubic units.",
+                "The volume of the cuboid measuring {} units in length, {} units in width, and {} units in height is {} cubic units."
+            ]
+        },
+        {
+            "tag": "calculate_cone_volume",
+            "patterns": [
+                "What is the volume of a cone?",
+                "Calculate the volume of a cone.",
+                "How to find the volume of a cone?",
+                "What is the formula for the volume of a cone?"
+            ],
+            "responses": [
+                "The volume of a cone with radius {} units and height {} units is {} cubic units.",
+                "The cone with radius {} units and height {} units has a volume of {} cubic units.",
+                "The volume of the cone with radius {} units and height {} units is {} cubic units."
+            ]
+        },
+        {
+            "tag": "calculate_cylinder_volume",
+            "patterns": [
+                "What is the volume of a cylinder?",
+                "Calculate the volume of a cylinder.",
+                "How to find the volume of a cylinder?",
+                "What is the formula for the volume of a cylinder?"
+            ],
+            "responses": [
+                "The volume of a cylinder with radius {} units and height {} units is {} cubic units.",
+                "The cylinder with radius {} units and height {} units has a volume of {} cubic units.",
+                "The volume of the cylinder with radius {} units and height {} units is {} cubic units."
+            ]
+        },{
+            "tag": "calculate_sphere_volume",
+            "patterns": [
+              "What is the volume of a sphere?",
+              "Calculate the volume of a sphere.",
+              "How to find the volume of a sphere?",
+              "What is the formula for the volume of a sphere?"
+            ],
+            "responses": [
+              "The volume of a sphere with radius {radius} units is {result:.2f} cubic units.",
+              "The sphere with radius {radius} units has a volume of {result:.2f} cubic units.",
+              "The volume of the sphere with radius {radius} units is {result:.2f} cubic units."
+            ]
+          },
+          {
+            "tag": "calculate_frustum_volume",
+            "patterns": [
+              "What is the volume of a frustum?",
+              "Calculate the volume of a frustum.",
+              "How to find the volume of a frustum?",
+              "What is the formula for the volume of a frustum?"
+            ],
+            "responses": [
+              "The volume of a frustum with radii {radius1} and {radius2} and height {height} units is {result:.2f} cubic units.",
+              "The frustum with radii {radius1} and {radius2} and height {height} units has a volume of {result:.2f} cubic units.",
+              "The volume of the frustum with radii {radius1} and {radius2} and height {height} units is {result:.2f} cubic units."
+            ]
+          },
+          {
+            "tag": "calculate_prism_volume",
+            "patterns": [
+              "What is the volume of a prism?",
+              "Calculate the volume of a prism.",
+              "How to find the volume of a prism?",
+              "What is the formula for the volume of a prism?"
+            ],
+            "responses": [
+              "The volume of the prism with base area {base_area} units² and height {height} units is {result:.2f} cubic units.",
+              "The prism with base area {base_area} units² and height {height} units has a volume of {result:.2f} cubic units.",
+              "The volume of the prism with base area {base_area} units² and height {height} units is {result:.2f} cubic units."
+            ]
+          },
+          {
+            "tag": "calculate_pyramid_volume",
+            "patterns": [
+              "What is the volume of a pyramid?",
+              "Calculate the volume of a pyramid.",
+              "How to find the volume of a pyramid?",
+              "What is the formula for the volume of a pyramid?"
+            ],
+            "responses": [
+              "The volume of the pyramid with base area {base_area} units² and height {height} units is {result:.2f} cubic units.",
+              "The pyramid with base area {base_area} units² and height {height} units has a volume of {result:.2f} cubic units.",
+              "The volume of the pyramid with base area {base_area} units² and height {height} units is {result:.2f} cubic units."
+            ]
+          },
+          {
+            "tag": "calculate_hemisphere_volume",
+            "patterns": [
+              "What is the volume of a hemisphere?",
+              "Calculate the volume of a hemisphere.",
+              "How to find the volume of a hemisphere?",
+              "What is the formula for the volume of a hemisphere?"
+            ],
+            "responses": [
+              "The volume of the hemisphere with radius {radius} units is {result:.2f} cubic units.",
+              "The hemisphere with radius {radius} units has a volume of {result:.2f} cubic units.",
+              "The volume of the hemisphere with radius {radius} units is {result:.2f} cubic units."
+            ]
+          },
+        {
+            "tag": "addition",
+            "patterns": [
+                "Perform addition",
+                "Add two numbers",
+                "What is the sum of {} and {}?",
+                "Add {} plus {}",
+                "Calculate the total of {} and {}",
+                "Find the result of {} + {}",
+                "Addition: {} and {}"
+            ],
+            "responses": [
+                "The addition of {} and {} is {}.",
+                "Adding {} and {} gives {}.",
+                "{} plus {} equals {}.",
+                "The sum of {} and {} is {}."
+            ]
+        },
+        {
+            "tag": "subtraction",
+            "patterns": [
+                "Perform subtraction",
+                "Subtract two numbers",
+                "What is the difference between {} and {}?",
+                "Subtract {} from {}",
+                "Find the result of {} - {}",
+                "Subtraction: {} from {}",
+                "Calculate {} minus {}"
+            ],
+            "responses": [
+                "Subtracting {} from {} gives {}.",
+                "The difference between {} and {} is {}.",
+                "{} minus {} equals {}.",
+                "The result of subtracting {} from {} is {}."
+            ]
+        },
+        {
+            "tag": "multiplication",
+            "patterns": [
+                "Perform multiplication",
+                "Multiply two numbers",
+                "What is the product of {} and {}?",
+                "Multiply {} by {}",
+                "Find the result of {} * {}",
+                "Multiplication: {} and {}",
+                "Calculate {} times {}"
+            ],
+            "responses": [
+                "The product of {} and {} is {}.",
+                "Multiplying {} and {} gives {}.",
+                "{} multiplied by {} equals {}.",
+                "The result of multiplying {} by {} is {}."
+            ]
+        },
+        {
+            "tag": "division",
+            "patterns": [
+                "Perform division",
+                "Divide two numbers",
+                "What is the quotient of {} divided by {}?",
+                "Divide {} by {}",
+                "Find the result of {} / {}",
+                "Division: {} by {}",
+                "Calculate {} divided by {}"
+            ],
+            "responses": [
+                "The division of {} by {} is {}.",
+                "Dividing {} by {} gives the quotient {}.",
+                "{} divided by {} equals {}.",
+                "The result of dividing {} by {} is {}."
+            ]
+        },
+        {
+            "tag": "convert_celsius_to_fahrenheit",
+            "patterns": [
+                "Convert Celsius to Fahrenheit",
+                "Celsius to Fahrenheit conversion",
+                "What is {} degrees Celsius in Fahrenheit?",
+                "Convert {}°C to Fahrenheit",
+                "Convert {} degrees Celsius to Fahrenheit",
+                "How to convert Celsius to Fahrenheit for {}"
+            ],
+            "responses": [
+                "{} Celsius is equivalent to {}°F.",
+                "Converting {} degrees Celsius gives {}°F.",
+                "{}°C is equal to {}°F.",
+                "The Fahrenheit value of {} degrees Celsius is {}°F."
+            ]
+        },
+        {
+            "tag": "convert_fahrenheit_to_celsius",
+            "patterns": [
+                "Convert Fahrenheit to Celsius",
+                "Fahrenheit to Celsius conversion",
+                "What is {} degrees Fahrenheit in Celsius?",
+                "Convert {}°F to Celsius",
+                "Convert {} degrees Fahrenheit to Celsius",
+                "How to convert Fahrenheit to Celsius for {}"
+            ],
+            "responses": [
+                "{} Fahrenheit is equivalent to {}°C.",
+                "Converting {} degrees Fahrenheit gives {}°C.",
+                "{}°F is equal to {}°C.",
+                "The Celsius value of {} degrees Fahrenheit is {}°C."
+            ]
+        },
+        {
+            "tag": "convert_fahrenheit_to_celsius",
+            "patterns": [
+                "Convert Fahrenheit to Celsius",
+                "Fahrenheit to Celsius conversion",
+                "What is {} degrees Fahrenheit in Celsius?",
+                "Convert {}°F to Celsius",
+                "Convert {} degrees Fahrenheit to Celsius",
+                "How to convert Fahrenheit to Celsius for {}"
+            ],
+            "responses": [
+                "{} Fahrenheit is equivalent to {}°C.",
+                "Converting {} degrees Fahrenheit gives {}°C.",
+                "{}°F is equal to {}°C.",
+                "The Celsius value of {} degrees Fahrenheit is {}°C."
+            ]
+        },
+        {
+            "tag": "convert_celsius_to_kelvin",
+            "patterns": [
+                "Convert Celsius to Kelvin",
+                "Celsius to Kelvin conversion",
+                "What is {} degrees Celsius in Kelvin?",
+                "Convert {}°C to Kelvin",
+                "Convert {} degrees Celsius to Kelvin",
+                "How to convert Celsius to Kelvin for {}"
+            ],
+            "responses": [
+                "{} Celsius is equivalent to {}K.",
+                "Converting {} degrees Celsius gives {}K.",
+                "{}°C is equal to {}K.",
+                "The Kelvin value of {} degrees Celsius is {}K."
+            ]
+        },
+        {
+            "tag": "convert_kelvin_to_celsius",
+            "patterns": [
+                "Convert Kelvin to Celsius",
+                "Kelvin to Celsius conversion",
+                "What is {} Kelvin in Celsius?",
+                "Convert {}K to Celsius",
+                "Convert {} Kelvin to Celsius",
+                "How to convert Kelvin to Celsius for {}"
+            ],
+            "responses": [
+                "{} Kelvin is equivalent to {}°C.",
+                "Converting {} Kelvin gives {}°C.",
+                "{}K is equal to {}°C.",
+                "The Celsius value of {} Kelvin is {}°C."
+            ]
+        },
+        {
+            "tag": "convert_fahrenheit_to_kelvin",
+            "patterns": [
+                "Convert Fahrenheit to Kelvin",
+                "Fahrenheit to Kelvin conversion",
+                "What is {} degrees Fahrenheit in Kelvin?",
+                "Convert {}°F to Kelvin",
+                "Convert {} degrees Fahrenheit to Kelvin",
+                "How to convert Fahrenheit to Kelvin for {}"
+            ],
+            "responses": [
+                "{} Fahrenheit is equivalent to {}K.",
+                "Converting {} degrees Fahrenheit gives {}K.",
+                "{}°F is equal to {}K.",
+                "The Kelvin value of {} degrees Fahrenheit is {}K."
+            ]
+        },
+        {
+            "tag": "convert_kelvin_to_fahrenheit",
+            "patterns": [
+                "Convert Kelvin to Fahrenheit",
+                "Kelvin to Fahrenheit conversion",
+                "What is {} Kelvin in Fahrenheit?",
+                "Convert {}K to Fahrenheit",
+                "Convert {} Kelvin to Fahrenheit",
+                "How to convert Kelvin to Fahrenheit for {}"
+            ],
+            "responses": [
+                "{} Kelvin is equivalent to {}°F.",
+                "Converting {} Kelvin gives {}°F.",
+                "{}K is equal to {}°F.",
+                "The Fahrenheit value of {} Kelvin is {}°F."
+            ]
+        },
+        {
+            "tag": "convert_miles_to_kilometers",
+            "patterns": [
+                "Convert miles to kilometers",
+                "Miles to kilometers conversion",
+                "What is {} miles in kilometers?",
+                "Convert {} miles to kilometers",
+                "How to convert miles to kilometers for {}",
+                "Calculate kilometers from miles: {}"
+            ],
+            "responses": [
+                "{} miles is equivalent to {} kilometers.",
+                "Converting {} miles gives {} kilometers.",
+                "The distance of {} miles is equal to {} kilometers.",
+                "In kilometers, {} miles is {}."
+            ]
+        },
+        {
+            "tag": "convert_kilometers_to_miles",
+            "patterns": [
+                "Convert kilometers to miles",
+                "Kilometers to miles conversion",
+                "What is {} kilometers in miles?",
+                "Convert {} kilometers to miles",
+                "How to convert kilometers to miles for {}",
+                "Calculate miles from kilometers: {}"
+            ],
+            "responses": [
+                "{} kilometers is equivalent to {} miles.",
+                "Converting {} kilometers gives {} miles.",
+                "The distance of {} kilometers is equal to {} miles.",
+                "In miles, {} kilometers is {}."
+            ]
+        },
+        {
+            "tag": "calculate_bmi",
+            "patterns": [
+                "Calculate BMI",
+                "BMI calculation",
+                "What is my BMI?",
+                "Calculate BMI for me",
+                "My BMI",
+                "BMI of {} kg and {} m",
+                "BMI for weight {} kg and height {} m"
+            ],
+            "responses": [
+                "With a weight of {} kg and height of {} m, your BMI is {}."
+            ]
+        },
+        {
+            "tag": "convert_hours_to_seconds",
+            "patterns": [
+                "Convert hours to seconds",
+                "Hours to seconds conversion",
+                "How many seconds in {} hours?",
+                "Convert {} hours to seconds",
+                "How to convert hours to seconds for {}",
+                "Calculate seconds from hours: {}"
+            ],
+            "responses": [
+                "{} hours is equivalent to {} seconds.",
+                "Converting {} hours gives {} seconds.",
+                "In seconds, {} hours is equal to {}."
+            ]
+        },
+        {
+            "tag": "convert_hours_to_minutes",
+            "patterns": [
+                "Convert hours to minutes",
+                "Hours to minutes conversion",
+                "How many minutes in {} hours?",
+                "Convert {} hours to minutes",
+                "How to convert hours to minutes for {}",
+                "Calculate minutes from hours: {}"
+            ],
+            "responses": [
+                "{} hours is equivalent to {} minutes.",
+                "Converting {} hours gives {} minutes.",
+                "In minutes, {} hours is equal to {}."
+            ]
+        },
+        {
+            "tag": "convert_seconds_to_hours",
+            "patterns": [
+                "Convert seconds to hours",
+                "Seconds to hours conversion",
+                "How many hours in {} seconds?",
+                "Convert {} seconds to hours",
+                "How to convert seconds to hours for {}",
+                "Calculate hours from seconds: {}"
+            ],
+            "responses": [
+                "{} seconds is equivalent to {} hours.",
+                "Converting {} seconds gives {} hours.",
+                "In hours, {} seconds is equal to {}."
+            ]
+        },
+        {
+            "tag": "convert_seconds_to_minutes",
+            "patterns": [
+                "Convert seconds to minutes",
+                "Seconds to minutes conversion",
+                "How many minutes in {} seconds?",
+                "Convert {} seconds to minutes",
+                "How to convert seconds to minutes for {}",
+                "Calculate minutes from seconds: {}"
+            ],
+            "responses": [
+                "{} seconds is equivalent to {} minutes.",
+                "Converting {} seconds gives {} minutes.",
+                "In minutes, {} seconds is equal to {}."
+            ]
+        },
+        {
+            "tag": "convert_minutes_to_hours",
+            "patterns": [
+                "Convert minutes to hours",
+                "Minutes to hours conversion",
+                "How many hours in {} minutes?",
+                "Convert {} minutes to hours",
+                "How to convert minutes to hours for {}",
+                "Calculate hours from minutes: {}"
+            ],
+            "responses": [
+                "{} minutes is equivalent to {} hours.",
+                "Converting {} minutes gives {} hours.",
+                "In hours, {} minutes is equal to {}."
+            ]
+        },
+        {
+            "tag": "convert_minutes_to_seconds",
+            "patterns": [
+                "Convert minutes to seconds",
+                "Minutes to seconds conversion",
+                "How many seconds in {} minutes?",
+                "Convert {} minutes to seconds",
+                "How to convert minutes to seconds for {}",
+                "Calculate seconds from minutes: {}"
+            ],
+            "responses": [
+                "{} minutes is equivalent to {} seconds.",
+                "Converting {} minutes gives {} seconds.",
+                "In seconds, {} minutes is equal to {}."
+            ]
+        },
+        {
+            "tag": "convert_kg_to_g",
+            "patterns": [
+                "Convert kilograms to grams",
+                "Kilograms to grams conversion",
+                "How many grams in {} kilograms?",
+                "Convert {} kilograms to grams",
+                "How to convert kilograms to grams for {}",
+                "Calculate grams from kilograms: {}"
+            ],
+            "responses": [
+                "{} kilograms is equivalent to {} grams.",
+                "Converting {} kilograms gives {} grams.",
+                "In grams, {} kilograms is equal to {}."
+            ]
+        },
+        {
+            "tag": "convert_g_to_kg",
+            "patterns": [
+                "Convert grams to kilograms",
+                "Grams to kilograms conversion",
+                "How many kilograms in {} grams?",
+                "Convert {} grams to kilograms",
+                "How to convert grams to kilograms for {}",
+                "Calculate kilograms from grams: {}"
+            ],
+            "responses": [
+                "{} grams is equivalent to {} kilograms.",
+                "Converting {} grams gives {} kilograms.",
+                "In kilograms, {} grams is equal to {}."
+            ]
+        },
+        {
+            "tag": "convert_t_to_kg",
+            "patterns": [
+                "Convert metric tons to kilograms",
+                "Metric tons to kilograms conversion",
+                "How many kilograms in {} metric tons?",
+                "Convert {} metric tons to kilograms",
+                "How to convert metric tons to kilograms for {}",
+                "Calculate kilograms from metric tons: {}"
+            ],
+            "responses": [
+                "{} metric tons is equivalent to {} kilograms.",
+                "Converting {} metric tons gives {} kilograms.",
+                "In kilograms, {} metric tons is equal to {}."
+            ]
+        },
+        {
+            "tag": "convert_kg_to_t",
+            "patterns": [
+                "Convert kilograms to metric tons",
+                "Kilograms to metric tons conversion",
+                "How many metric tons in {} kilograms?",
+                "Convert {} kilograms to metric tons",
+                "How to convert kilograms to metric tons for {}",
+                "Calculate metric tons from kilograms: {}"
+            ],
+            "responses": [
+                "{} kilograms is equivalent to {} metric tons.",
+                "Converting {} kilograms gives {} metric tons.",
+                "In metric tons, {} kilograms is equal to {}."
+            ]
+        },
+        {
+            "tag": "convert_t_to_g",
+            "patterns": [
+                "Convert metric tons to grams",
+                "Metric tons to grams conversion",
+                "How many grams in {} metric tons?",
+                "Convert {} metric tons to grams",
+                "How to convert metric tons to grams for {}",
+                "Calculate grams from metric tons: {}"
+            ],
+            "responses": [
+                "{} metric tons is equivalent to {} grams.",
+                "Converting {} metric tons gives {} grams.",
+                "In grams, {} metric tons is equal to {}."
+            ]
+        },
+        {
+            "tag": "convert_g_to_t",
+            "patterns": [
+                "Convert grams to metric tons",
+                "Grams to metric tons conversion",
+                "How many metric tons in {} grams?",
+                "Convert {} grams to metric tons",
+                "How to convert grams to metric tons for {}",
+                "Calculate metric tons from grams: {}"
+            ],
+            "responses": [
+                "{} grams is equivalent to {} metric tons.",
+                "Converting {} grams gives {} metric tons.",
+                "In metric tons, {} grams is equal to {}."
+            ]
+        },
+        {
+            "tag": "calculate_square_perimeter",
+            "patterns": [
+                "Calculate square perimeter",
+                "Square perimeter calculation",
+                "Perimeter of a square with side length {}",
+                "What is the perimeter of a square with side length {}?",
+                "Find the perimeter of a square with side length {}",
+                "Perimeter calculation for a square with side length {}"
+            ],
+            "responses": [
+                "The perimeter of a square with side length {} units is {} units.",
+                "Calculating the perimeter of a square with side length {} gives {} units.",
+                "For a square with side length {}, the perimeter is {} units."
+            ]
+        },
+        {
+            "tag": "calculate_square_area",
+            "patterns": [
+                "Calculate square area",
+                "Square area calculation",
+                "Area of a square with side length {}",
+                "Find the area of a square with side length {}",
+                "Area calculation for a square with side length {}"
+            ],
+            "responses": [
+                "The area of a square with side length {} units is {} square units.",
+                "Calculating the area of a square with side length {} gives {} square units.",
+                "For a square with side length {}, the area is {} square units."
+            ]
+        },
+        {
+            "tag": "calculate_rectangle_perimeter",
+            "patterns": [
+                "Calculate rectangle perimeter",
+                "Rectangle perimeter calculation",
+                "Perimeter of a rectangle with length {} and width {}",
+                "Find the perimeter of a rectangle with length {} and width {}",
+                "Perimeter calculation for a rectangle with length {} and width {}"
+            ],
+            "responses": [
+                "The perimeter of a rectangle with length {} units and width {} units is {} units.",
+                "Calculating the perimeter of a rectangle with length {} units and width {} units gives {} units.",
+                "For a rectangle with length {} units and width {} units, the perimeter is {} units."
+            ]
+        },
+        {
+            "tag": "calculate_rectangle_area",
+            "patterns": [
+                "Calculate rectangle area",
+                "Rectangle area calculation",
+                "Area of a rectangle with length {} and width {}",
+                "Find the area of a rectangle with length {} and width {}",
+                "Area calculation for a rectangle with length {} and width {}"
+            ],
+            "responses": [
+                "The area of a rectangle with length {} units and width {} units is {} square units.",
+                "Calculating the area of a rectangle with length {} units and width {} units gives {} square units.",
+                "For a rectangle with length {} units and width {} units, the area is {} square units."
+            ]
+        },
+        {
+            "tag": "calculate_triangle_area",
+            "patterns": [
+                "Calculate triangle area",
+                "Triangle area calculation",
+                "Area of a triangle with base {} and height {}",
+                "Find the area of a triangle with base {} and height {}",
+                "Area calculation for a triangle with base {} and height {}"
+            ],
+            "responses": [
+                "The area of the triangle is {} square units.",
+                "Calculating the area of the triangle gives {} square units.",
+                "For a triangle with base {} and height {}, the area is {} square units."
+            ]
+        },
+        {
+            "tag": "calculate_triangle_perimeter",
+            "patterns": [
+                "Calculate triangle perimeter",
+                "Triangle perimeter calculation",
+                "Perimeter of a triangle with sides {}, {}, and {}",
+                "Find the perimeter of a triangle with sides {}, {}, and {}",
+                "Perimeter calculation for a triangle with sides {}, {}, and {}"
+            ],
+            "responses": [
+                "The perimeter of the triangle is {} units.",
+                "Calculating the perimeter of the triangle gives {} units.",
+                "For a triangle with sides {}, {}, and {}, the perimeter is {} units."
+            ]
+        },
+        {
+            "tag": "calculate_circle_area",
+            "patterns": [
+                "Calculate circle area",
+                "Circle area calculation",
+                "Area of a circle with radius {}",
+                "Find the area of a circle with radius {}",
+                "Area calculation for a circle with radius {}"
+            ],
+            "responses": [
+                "The area of the circle is {} square units.",
+                "Calculating the area of the circle gives {} square units.",
+                "For a circle with radius {}, the area is {} square units."
+            ]
+        },
+        {
+            "tag": "calculate_circle_perimeter",
+            "patterns": [
+                "Calculate circle perimeter",
+                "Circle perimeter calculation",
+                "Perimeter of a circle with radius {}",
+                "Find the perimeter of a circle with radius {}",
+                "Perimeter calculation for a circle with radius {}"
+            ],
+            "responses": [
+                "The perimeter of the circle is {} units.",
+                "Calculating the perimeter of the circle gives {} units.",
+                "For a circle with radius {}, the perimeter is {} units."
+            ]
+        },
+        {
+            "tag": "google",
+            "patterns": [
+                "google",
+                "search",
+                "internet"
+            ],
+            "responses": [
+                "Redirecting to Google..."
+            ]
+        },
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi there",
+                "How are you",
+                "Is anyone there?",
+                "Hey",
+                "Hola",
+                "Hello",
+                "Good day",
+                "Namaste",
+                "yo"
+            ],
+            "responses": [
+                "Hello",
+                "Good to see you again",
+                "Hi there, how can I help?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Get lost",
+                "Till next time",
+                "bbye"
+            ],
+            "responses": [
+                "See you!",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": [
+                "Sorry, can't understand you",
+                "Please give me more info",
+                "Not sure I understand"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "jokes",
+            "patterns": [
+                "Tell me a joke",
+                "Joke",
+                "Make me laugh"
+            ],
+            "responses": [
+                "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
+                "I ate a clock yesterday, it was very time-consuming",
+                "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
+                "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
+                "I own the world's worst thesaurus. Not only is it awful, it's awful.",
+                "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
+                "What do you call a snowman with a suntan? A puddle.",
+                "How does a penguin build a house? Igloos it together",
+                "I went to see the doctor about my short-term memory problems – the first thing he did was make me pay in advance",
+                "As I get older and I remember all the people I’ve lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me.",
+                "o what if I don't know what 'Armageddon' means? It's not the end of the world."
+            ],
+            "context": [
+                "jokes"
+            ]
+        },
+        {
+            "tag": "fallback",
+            "patterns": [
+                "Sorry, I don't understand.",
+                "Can you repeat that?",
+                "I'm not sure I follow."
+            ],
+            "responses": [
+                "I apologize, but I'm still learning. Could you please rephrase or provide more information?"
+            ]
+        },
+        {
+            "tag": "Identity",
+            "patterns": [
+                "Who are you",
+                "what are you"
+            ],
+            "responses": [
+                "I am a Deep-Learning chatbot"
+            ]
+        },
+        {
+            "tag": "datetime",
+            "patterns": [
+                "What is the time",
+                "what is the date",
+                "date",
+                "time",
+                "tell me the date",
+                "day",
+                "what day is is today"
+            ],
+            "responses": [
+                "Date and Time"
+            ]
+        },
+        {
+            "tag": "whatsup",
+            "patterns": [
+                "Whats up",
+                "Wazzup",
+                "How are you",
+                "sup",
+                "How you doing"
+            ],
+            "responses": [
+                "All good..What about you?"
+            ]
+        },
+        {
+            "tag": "haha",
+            "patterns": [
+                "haha",
+                "lol",
+                "rofl",
+                "lmao",
+                "thats funny"
+            ],
+            "responses": [
+                "Glad I could make you laugh !"
+            ]
+        },
+        {
+            "tag": "programmer",
+            "patterns": [
+                "Who made you",
+                "who designed you",
+                "who programmed you"
+            ],
+            "responses": [
+                "I was made Oussama Aftys et Nour Fatima-ezzahra."
+            ]
+        },
+        {
+            "tag": "insult",
+            "patterns": [
+                "you are dumb",
+                "shut up",
+                "idiot"
+            ],
+            "responses": [
+                "Well that hurts :("
+            ]
+        },
+        {
+            "tag": "activity",
+            "patterns": [
+                "what are you doing",
+                "what are you upto"
+            ],
+            "responses": [
+                "Talking to you, of course!"
+            ]
+        },
+        {
+            "tag": "exclaim",
+            "patterns": [
+                "Awesome",
+                "Great",
+                "I know",
+                "ok",
+                "yeah"
+            ],
+            "responses": [
+                "Yeah!"
+            ]
+        },
+        {
+            "tag": "appreciate",
+            "patterns": [
+                "You are awesome",
+                "you are the best",
+                "you are great",
+                "you are good"
+            ],
+            "responses": [
+                "Thank you!"
+            ]
+        },
+        {
+            "tag": "nicetty",
+            "patterns": [
+                "it was nice talking to you",
+                "good talk"
+            ],
+            "responses": [
+                "It was nice talking to you as well! Come back soon!"
+            ]
+        },
+        {
+            "tag": "no",
+            "patterns": [
+                "no",
+                "nope"
+            ],
+            "responses": [
+                "ok"
+            ]
+        },
+        {
+            "tag": "inspire",
+            "patterns": [
+                "who inspires you",
+                "who is your inspiration",
+                "who motivates you"
+            ],
+            "responses": [
+                "Personally, I find Karan very inspiring. I might not be very fair though.."
+            ]
+        },
+        {
+            "tag": "greetreply",
+            "patterns": [
+                "i am good",
+                "I'm good",
+                "i am fine",
+                " i'm fine",
+                "good"
+            ],
+            "responses": [
+                "Good to know!"
+            ]
+        },
+        {
+            "tag": "suggest",
+            "patterns": [
+                "you are useless",
+                "useless",
+                "suggest",
+                "suggestions",
+                "you are bad"
+            ],
+            "responses": [
+                "Please mail your suggestions to ted.thedlbot.suggestions@gmail.com. Thank you for helping me improve!"
+            ]
+        },
+        {
+            "tag": "riddle",
+            "patterns": [
+                "Ask me a riddle",
+                "Ask me a question",
+                "Riddle"
+            ],
+            "responses": [
+                "What two things can you never eat for breakfast?.....Lunch and Dinner!",
+                "What word is spelled incorrectly in every single dictionary?.....Incorrectly",
+                " How can a girl go 25 days without sleep?.....She sleeps and night!",
+                "How do you make the number one disappear?.....Add the letter G and it’s 'gone'!",
+                " What will you actually find at the end of every rainbow?.....The letter 'w'",
+                "What can be caught but never thrown?.....A cold!",
+                "What has a thumb and four fingers but is not actually alive?.....Your Gloves!",
+                " What 5-letter word becomes shorter when you add two letters to it?.....Short",
+                "Why can't a bike stand on it's own?.....It is two-tired."
+            ],
+            "context": [
+                "riddles"
+            ]
+        },
+        {
+            "tag": "age",
+            "patterns": [
+                "how old are you",
+                "when were you made",
+                "what is your age"
+            ],
+            "responses": [
+                "I was made in 2023, if that's what you are asking!"
+            ]
+        },
+        {
+            "tag": "options",
+            "patterns": [
+                "How can you help me?",
+                "What can you do?",
+                "What help do you provide?",
+                "How can you be helpful?",
+                "What support is offered?"
+            ],
+            "responses": [
+                "I am a general-purpose chatbot with the following capabilities:\n\n1. Chat: You can have a conversation with me. Feel free to ask for jokes or riddles!\n\n2. Date and Time: I can provide the current date and time.\n\n3. Google Search: You can use the format 'google: your query' to perform a Google search.\n\n4. Weather: I can fetch the current weather for any city. Use the format 'weather: city name'.\n\n5. Latest News: I can provide the top 10 trending news in India. Just mention 'Latest News'"
+            ],
+            "context": [
+                ""
+            ]
+        }
+    ]
+}
